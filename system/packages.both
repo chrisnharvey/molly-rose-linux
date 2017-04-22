@@ -36,6 +36,7 @@ gnome-shell
 gnome-shell-extensions
 gnome-initial-setup
 gnome-backgrounds
+gnome-keyring
 
 # System
 networkmanager
