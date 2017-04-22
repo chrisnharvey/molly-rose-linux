@@ -1,4 +1,8 @@
-# Included apps
+# Games
+gcompris-qt
+tuxpaint
+
+# GNOME apps
 gnome-calculator
 gnome-maps
 gnome-music
