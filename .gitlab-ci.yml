@@ -1,0 +1,19 @@
+image: gitlab/dind
+
+build:
+    before_script:
+        - docker pull pritunl/archlinux
+        - docker run --name mrlinux -itd --privileged -v ${PWD}:/mnt pritunl/archlinux /bin/bash
+        - docker exec mrlinux cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+        - docker exec mrlinux sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup
+        - docker exec mrlinux /bin/sh -c "rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist"
+        - docker exec mrlinux pacman -S archiso --noconfirm
+        - docker exec mrlinux mkdir /run/shm
+
+    script:
+        - docker exec mrlinux /bin/sh -c "cd /mnt/system && ./build.sh -v"
+        
+    after_script:
+        - sudo apt-get update
+        - sudo apt-get install -y sshpass
+        - ./deploy.sh
