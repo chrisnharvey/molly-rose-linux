@@ -17,6 +17,7 @@ mpg123
 lcms2
 giflib
 libpng
+gdm
 #plymouth
 #gdm-plymouth
 gtk2
