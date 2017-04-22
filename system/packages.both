@@ -35,6 +35,7 @@ gnome-initial-setup
 gnome-backgrounds
 
 # System
+networkmanager
 b43-fwcutter
 btrfs-progs
 clonezilla
