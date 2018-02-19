@@ -17,6 +17,7 @@ A Linux distro aimed at children.
 - [ ] Enable "reveal pointer" setting for mouse/touchpad.
 - [ ] Use Chromium as the default browser with child safety extensions intalled.
 - [ ] Use Norton ConnectSafe or OpenDNS by default to filter inappropriate websites.
+- [ ] Boot from ISO and use overlayfs for changes (this will give us the ability to reset the system if it breaks)
 
 ## Pre-installed apps
 
