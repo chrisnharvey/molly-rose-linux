@@ -1,5 +1,0 @@
-#!/usr/bin/ash
-
-build() {
-    add_runscript
-}
