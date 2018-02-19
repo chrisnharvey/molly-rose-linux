@@ -1,9 +1,0 @@
-#!/usr/bin/ash
-
-run_latehook() {
-    mount -o remount,rw /run/archiso/img_dev
-
-    mkdir /new_root/Users
-    ​
-    mount --bind /run/archiso/img_dev/Users /new_root/Users
-}
