@@ -32,8 +32,16 @@ A Linux distro aimed at children.
 
 ## Pre-installed web apps
 
+These apps will be .desktop web apps saved by Chromium.
+
 - [ ] CBeebies
 - [ ] Disney Jr
 - [ ] Milkshake!
 - [ ] Nick Jr.
 - [ ] Peppa Pig
+
+## Chromium configuration
+
+- [ ] Kidrex search engine
+- [ ] Do Not Track enabled
+- [ ] Tracking features disabled
